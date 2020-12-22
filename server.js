@@ -14,11 +14,9 @@ app.get('/', (req, res) => {
 })
 
 logout = (socket) => {
-    //ログアウト処理
 }
 
 fetchUser = (socket) => {
-    console.log(users);
     if (!users) return;
     return users[socket.id];
 }
@@ -34,17 +32,11 @@ io.on('connection', (socket) => {
 
     // client から server のメッセージ
     socket.on('client_to_server', (data) => {
-        data.datetime = new Date();
-        console.log(data);
-        // server から client へのメッセージ
     })
 
     //ログイン処理
     socket.on('login', (user) => {
-        console.log('login');
         //user.isConnect = true なら終了
-
-        //user.isConnect を true にする
 
         //トークン発行
 
@@ -57,9 +49,8 @@ io.on('connection', (socket) => {
         //送信元以外全てのクライアントの「user_joined」にデータ送信（ブロードキャスト）
     });
 
-    //スタンプ送信
+    //スタンプ送受信
     socket.on('sendStamp', (imageData) => {
-        //前ユーザに対して imageData を送信
     });
 
     //ユーザ一覧

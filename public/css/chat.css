@@ -6,7 +6,7 @@ img {
     position: relative;
     display: inline-block;
     padding: 7px 10px;
-    width: 100%;
+    width: 90%;
     border: solid 3px #eaeff4;
     border-radius: 5px;
     box-sizing: border-box;
@@ -27,7 +27,8 @@ img {
     position: relative;
     display: inline-block;
     padding: 7px 10px;
-    width: 100%;
+    left: 10%;
+    width: 90%;
     border: solid 3px #65c2d3;
     border-radius: 5px;
     box-sizing: border-box;
