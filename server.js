@@ -50,7 +50,7 @@ io.on('connection', (socket) => {
     });
 
     //スタンプ送受信
-    socket.on('sendStamp', (imageData) => {
+    socket.on('sendStamp', (data) => {
     });
 
     //ユーザ一覧
